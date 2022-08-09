@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/FurnitureStore/static/css/main.8e7c96c1.css",
+    "main.js": "/FurnitureStore/static/js/main.80c4c49b.js",
+    "static/js/787.6631ca78.chunk.js": "/FurnitureStore/static/js/787.6631ca78.chunk.js",
+    "static/media/Logo.png": "/FurnitureStore/static/media/Logo.33133b20001bb23ad0c8.png",
+    "index.html": "/FurnitureStore/index.html",
+    "static/media/Cart.svg": "/FurnitureStore/static/media/Cart.08aae55e20485e63489325896c9496a2.svg",
+    "main.8e7c96c1.css.map": "/FurnitureStore/static/css/main.8e7c96c1.css.map",
+    "main.80c4c49b.js.map": "/FurnitureStore/static/js/main.80c4c49b.js.map",
+    "787.6631ca78.chunk.js.map": "/FurnitureStore/static/js/787.6631ca78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e7c96c1.css",
+    "static/js/main.80c4c49b.js"
+  ]
+}
