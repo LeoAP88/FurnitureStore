@@ -1,0 +1,33 @@
+$breakpoints: (
+    Tablet:481px,
+    Laptop:769px,
+    Desktop:1025px
+);
+
+@media(min-width:map-get($breakpoints, Tablet)) {
+
+    // Nav
+
+
+}
+
+@media(min-width:map-get($breakpoints, Laptop)) {
+
+    // Nav
+
+    .NavBar {
+        flex-direction: row;
+        column-gap: 100px;
+
+        li {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+@media(min-width:map-get($breakpoints, Desktop)) {
+
+    // Nav
+
+}
