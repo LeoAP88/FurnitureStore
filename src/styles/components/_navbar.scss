@@ -6,33 +6,83 @@
     align-items: center;
     padding: 10px 0;
     position: sticky;
-    box-shadow: 0px 4px 5px -4px rgba(0,0,0,0.54);
+    box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 0.54);
+    color: $NavBarLinks;
+    background-image: url('../../assets/images/wood-bkg.jpg');
+    background-position:center;
 
     ul {
         display: flex;
-        column-gap: 20px;
+        column-gap: 18px;
         margin: 15px 0;
     }
 
     li {
         list-style-type: none;
         font-weight: bold;
-        font-size: 0.8rem;
-    }
+        font-size: 0.9rem;
 
-    a {
-        text-decoration: none;
-        color: $NavBarLinks;
+        &:after {
+            background: none repeat scroll 0 0 transparent;
+            content: "";
+            display: block;
+            position: relative;
+            height: 2px;
+            left: 50%;
+            background: $NavBarLinks;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        &:hover:after {
+
+            width: 100%;
+            left: 0;
+
+        }
     }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: $NavBarLinks;
+
+
+}
+
+.Container_logo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.Container_BrandName {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.Brand_Subtitle {
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .Logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .Cart {
-    width: 30px;
-    height: 30px;
-    color: $NavBarLinks;
+    width: 1.7rem;
+    height: 1.7rem;
 }
+
+.pulsate-fwd:hover{-webkit-animation:pulsate-fwd .5s ease-in-out infinite both;animation:pulsate-fwd .5s ease-in-out infinite both}
+
+ @-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
