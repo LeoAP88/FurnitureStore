@@ -1,9 +1,12 @@
-import {NavBar} from './components/NavBar';
-import {ItemListContainer} from './components/ItemListContainer';
+import { NavBar } from './components/NavBar';
+import { ItemListContainer } from './components/ItemListContainer';
 
-function App() {
+function App(props) {
   return (
-    <NavBar />
+    <>
+      <NavBar />
+      <ItemListContainer greeting={'Future items list container'}/>
+    </>
   );
 }
 
