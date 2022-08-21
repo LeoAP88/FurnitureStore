@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FurnitureStore/static/css/main.edb28fa9.css",
-    "main.js": "/FurnitureStore/static/js/main.26351b64.js",
+    "main.css": "/FurnitureStore/static/css/main.7975c5f8.css",
+    "main.js": "/FurnitureStore/static/js/main.34c5beec.js",
     "static/js/787.6631ca78.chunk.js": "/FurnitureStore/static/js/787.6631ca78.chunk.js",
     "static/media/wood-bkg.jpg": "/FurnitureStore/static/media/wood-bkg.32868ed424a87af04de1.jpg",
     "index.html": "/FurnitureStore/index.html",
     "static/media/Cart.svg": "/FurnitureStore/static/media/Cart.08aae55e20485e63489325896c9496a2.svg",
-    "main.edb28fa9.css.map": "/FurnitureStore/static/css/main.edb28fa9.css.map",
-    "main.26351b64.js.map": "/FurnitureStore/static/js/main.26351b64.js.map",
+    "main.7975c5f8.css.map": "/FurnitureStore/static/css/main.7975c5f8.css.map",
+    "main.34c5beec.js.map": "/FurnitureStore/static/js/main.34c5beec.js.map",
     "787.6631ca78.chunk.js.map": "/FurnitureStore/static/js/787.6631ca78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edb28fa9.css",
-    "static/js/main.26351b64.js"
+    "static/css/main.7975c5f8.css",
+    "static/js/main.34c5beec.js"
   ]
 }
