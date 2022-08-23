@@ -2,10 +2,13 @@
 
 @import './base/settings';
 @import './base/reset';
+@import './base/grid.scss';
 
 // Components
 
+@import './components/header.scss';
 @import './components/navbar.scss';
+@import './components/main.scss';
 
 
 // Screens

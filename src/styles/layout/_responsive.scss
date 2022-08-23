@@ -24,6 +24,12 @@ $breakpoints: (
         }
     }
 
+    .Container_Header-Nav {
+        display: grid;
+        grid-template-areas: "Header Nav";
+        justify-content: space-evenly;
+    }
+
 }
 
 @media(min-width:map-get($breakpoints, Desktop)) {
@@ -35,6 +41,11 @@ $breakpoints: (
         li {
             margin: 0 30px;
         }
+    }
+
+    .Container_Header-Nav {
+        justify-content: center;
+        column-gap: 100px;
     }
 
 }
