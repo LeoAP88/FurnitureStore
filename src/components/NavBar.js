@@ -8,19 +8,19 @@ export const NavBar = () => {
             <div className="Container_logo">
                 <a href="#"><img src={Logo} alt="Moderna Logo" className="Logo" /></a>
                 <div className="Container_BrandName">
-                    <p className="BrandName">MODERNA</p>
-                    <p className="Brand_Subtitle">FURNITURE STORE</p>
+                    <p className="BrandName">moderna</p>
+                    <p className="Brand_Subtitle">furniture store</p>
                 </div>
             </div>
             <ul className="">
                 <a href="#">
-                    <li className="">LIVING ROOM</li>
+                    <li className="">living room</li>
                 </a>
                 <a href="#">
-                    <li className="">BEDROOM</li>
+                    <li className="">bedroom</li>
                 </a>
                 <a href="#">
-                    <li className="">DINING ROOM</li>
+                    <li className="">dining room</li>
                 </a>
             </ul>
             <CartWidget />
