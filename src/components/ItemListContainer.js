@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
 
@@ -32,7 +32,7 @@ const ItemListContainer = ({ greeting }) => {
     }
 
     return (
-        <main>{greeting}
+        <main>
             <ItemCount stock={5} initial={1} onAdd={onAdd} />
             <section>
                 <ItemList products={products} />

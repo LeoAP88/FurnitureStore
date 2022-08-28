@@ -9,7 +9,7 @@ function App(props) {
         <Header />
         <NavBar />
       </div>
-      <ItemListContainer greeting={'Item list container'} />
+      <ItemListContainer />
     </>
   );
 }
