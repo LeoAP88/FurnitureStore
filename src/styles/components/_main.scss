@@ -1,3 +1,47 @@
-main{
+main {
     grid-area: Main;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+.ProdList_container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.Prod_Container{
+    width: 50%;
+}
+
+.Img_product{
+    width: 150px;
+    height: 100px;
+}
+
+.ItemCounter_Container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: rgb(207, 201, 190);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-addToCart{
+    margin-top: 10px;
+}
+
+.item-quantity{
+    padding: 0 20px;
 }

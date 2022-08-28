@@ -5,15 +5,14 @@ $breakpoints: (
 );
 
 @media(min-width:map-get($breakpoints, Tablet)) {
-
-    // Nav
-
+    .Img_product {
+        width: 230px;
+        height: 150px;
+    }
 
 }
 
 @media(min-width:map-get($breakpoints, Laptop)) {
-
-    // Nav
 
     .NavBar {
         flex-direction: row;
@@ -30,11 +29,17 @@ $breakpoints: (
         justify-content: space-evenly;
     }
 
+    .Img_product {
+        width: 230px;
+        height: 150px;
+    }
+
+    .Prod_Container {
+        width: 33%;
+    }
 }
 
 @media(min-width:map-get($breakpoints, Desktop)) {
-
-    // Nav
 
     .NavBar {
 
@@ -46,6 +51,20 @@ $breakpoints: (
     .Container_Header-Nav {
         justify-content: center;
         column-gap: 100px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ProdList_container {
+        width: 1300px;
+    }
+
+    .Img_product {
+        width: 300px;
+        height: 200px;
     }
 
 }
