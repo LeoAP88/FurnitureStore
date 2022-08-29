@@ -9,7 +9,7 @@ const ItemListContainer = () => {
     useEffect(() => {
 
         const FetchData = () => {
-            const URL = 'https://api.escuelajs.co/api/v1/categories/3/products';
+            const URL = 'https://api.escuelajs.co/api/v1/categories/3/products?offset=0&limit=15';
             fetch(URL)
                 .then(res => res.json())
                 .then(data => {
