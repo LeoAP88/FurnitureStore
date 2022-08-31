@@ -7,13 +7,13 @@ function NavBar() {
         <nav className="NavBar">
             <ul className="">
                 <a href="#">
-                    <li className="">living room</li>
+                    <li className="">All Products</li>
                 </a>
                 <a href="#">
-                    <li className="">bedroom</li>
+                    <li className="">Sofas</li>
                 </a>
                 <a href="#">
-                    <li className="">dining room</li>
+                    <li className="">Tables</li>
                 </a>
             </ul>
             <CartWidget />

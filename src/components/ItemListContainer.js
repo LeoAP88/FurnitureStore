@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
-import ItemList from "./ItemList";
+import {ItemList} from "./ItemList";
+import dataJson from "./data/data.json";
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
 
-        const FetchData = () => {
-            const URL = 'https://api.escuelajs.co/api/v1/categories/3/products?offset=0&limit=15';
-            fetch(URL)
-                .then(res => res.json())
-                .then(data => {
-                    setProducts(data);
-                })
-        }
+        const getProducts = (data, time) =>
+            new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (data) {
+                        resolve(data);
+                    } else {
+                        reject("Error");
+                    }
+                }, time);
+            });
 
-        const getData = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(FetchData);
-            }, 2000);
-        });
-        getData.then(res => setProducts(res));
-
-    }, [])
+        getProducts(dataJson, 2000)
+            .then((res) => {
+                setProducts(res);
+            })
+            .catch((err) => console.log(err, ": No products found"));
+    }, []);
 
 
     function onAdd(counterReceived) {

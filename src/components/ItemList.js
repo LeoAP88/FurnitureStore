@@ -1,7 +1,7 @@
 import React from 'react'
-import Item from './Item'
+import {Item} from './Item'
 
-const ItemList = ({ products }) => {
+export const ItemList = ({ products }) => {
 
     return (
         <div className="ProdList_container">

@@ -1,14 +1,15 @@
 import React from 'react'
 
-const Item = ({products}) => {
+export const Item = ({products}) => {
 
-    const {id,title,price,images} = products;
+    const {title,price,image} = products;
+
 
     return (
         <div className='Prod_Container'>
-            <p>{id} - {title}</p>
-            <p>{price}</p>
-            <img src={images} alt={title} className="Img_product"></img>
+            <p>{title}</p>
+            <p>${price}</p>
+            <img src={process.env.PUBLIC_URL+image} alt={title} className="Img_product"></img>
         </div>
     )
 }
