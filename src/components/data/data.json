@@ -1,6 +1,6 @@
 [
     {
-        "id": 1000,
+        "id": "1000",
         "category": "Sofa",
         "title": "Flexsteel Vail Loveseat",
         "description": "With oversized rolled arms, deep seating, and generous proportions, Vail has everything you need for curled-up coziness. Its slightly flared arms and tall, padded front rail paired with plush cushions trimmed in welt cording make this style ideal for any lounging environment.",
@@ -9,7 +9,7 @@
         "image": "/img/sofa/Flexsteel_Atlantis_Loveseat/Flexsteel_Atlantis_Loveseat_1.webp"
     },
     {
-        "id": 1001,
+        "id": "1001",
         "category": "Sofa",
         "title": "Flexsteel Aiden Gray",
         "description": "Transitional style meets overall comfort. Aiden is a clean, sophisticated, and sculptural design. It's soft, contoured arm; seat; and waterfall chaise pad encompass its tailored look. This power reclining loveseat features an exaggerated kidney pillow in the lumbar support area.",
@@ -18,7 +18,7 @@
         "image": "/img/sofa/Flexsteel_Aiden_Gray/Flexsteel_Aiden_Gray_1.webp"
     },
     {
-        "id": 1002,
+        "id": "1002",
         "category": "Sofa",
         "title": "Flexsteel Arlo Brown",
         "description": "Pull tufted back cushions create a checkered pattern and add pockets of comfort to Arlo. Refined arms lined with blind seams add tailored elegance to this piece.",
@@ -27,7 +27,7 @@
         "image": "/img/sofa/Flexsteel_Arlo_Brown/Flexsteel_Arlo_Brown_1.webp"
     },
     {
-        "id": 1003,
+        "id": "1003",
         "category": "Sofa",
         "title": "Flexsteel Arlo Flagstone",
         "description": "Picture yourself in comfort and style. Arlo is a transitional motion style that features a refined, rounded pad-over track arm that is lined with blind seams. It's pull-tufted back cushions create a unique subtle pattern and added pockets of comfort.",
@@ -36,7 +36,7 @@
         "image": "/img/sofa/Flexsteel_Arlo_Flagstone/Flexsteel_Arlo_Flagstone_1.webp"
     },
     {
-        "id": 1004,
+        "id": "1004",
         "category": "Sofa",
         "title": "Flexsteel Arlo Fossil",
         "description": "Pull tufted back cushions create a checkered pattern and add pockets of comfort to Arlo. Refined arms lined with blind seams add tailored elegance to this piece.",
@@ -45,7 +45,7 @@
         "image": "/img/sofa/Flexsteel_Arlo_Fossil/Flexsteel_Arlo_Fossil_1.webp"
     },
     {
-        "id": 1005,
+        "id": "1005",
         "category": "Sofa",
         "title": "Flexsteel Atlantis Loveseat",
         "description": "Flexsteel Atlantis Loveseat with flared arms and attached back cushions.",
@@ -54,7 +54,7 @@
         "image": "/img/sofa/Flexsteel_Atlantis_Loveseat/Flexsteel_Atlantis_Loveseat_1.webp"
     },
     {
-        "id": 1006,
+        "id": "1006",
         "category": "Sofa",
         "title": "Flexsteel Bay Bridge",
         "description": "Bay Bridge has the look of a family heirloom and the feel of brand-new upholstery. Look closer and you'll notice all the vintage details: tightly rolled arms, a rounded front rail, back and side panels lined with welt cord and nail head trim, and round bun feet.",
@@ -63,7 +63,7 @@
         "image": "/img/sofa/Flexsteel_Bay_Bridge/Flexsteel_Bay_Bridge_1.webp"
     },
     {
-        "id": 1007,
+        "id": "1007",
         "category": "Sofa",
         "title": "Flexsteel Bexley Leather",
         "description": "Flexsteel Bexley Leather Loveseat without Nailhead Trim includes attached back cushions and removable plush seat cushions.",
@@ -72,7 +72,7 @@
         "image": "/img/sofa/Flexsteel_Bexley_Leather/Flexsteel_Bexley_Leather_1.webp"
     },
     {
-        "id": 1008,
+        "id": "1008",
         "category": "Sofa",
         "title": "Flexsteel Cade Brown",
         "description": "Cade delivers extreme comfort with a fully padded, extended footrest and divided back cushions. Its frame spotlights unique armrests that pop out of a wrap-over detail and accentuated on the side with matching, heavy-thread stitching.",
@@ -81,7 +81,7 @@
         "image": "/img/sofa/Flexsteel_Cade_Brown/Flexsteel_Cade_Brown_1.webp"
     },
     {
-        "id": 2000,
+        "id": "2000",
         "category": "Table",
         "title": "Bassett Furniture Lewiston",
         "description": "Gather your friends and family around the warm curves of this classic silhouette, moderately scaled oval cocktail table. Made with elm veneers and Asian hardwoods, the dark Tavern finish highlights the wood's natural character.",
@@ -90,7 +90,7 @@
         "image": "/img/tables/Bassett_Furniture_Lewiston/Bassett_Furniture_Lewiston_1.webp"
     },
     {
-        "id": 2001,
+        "id": "2001",
         "category": "Table",
         "title": "Bassett Furniture Conroy",
         "description": "From slow Sunday mornings to laughter-filled nights, the BenchMade Conroy dining table elevates the everyday.",
@@ -99,7 +99,7 @@
         "image": "/img/tables/Bassett_Furniture_Conroy/Bassett_Furniture_Conroy_1.webp"
     },
     {
-        "id": 2002,
+        "id": "2002",
         "category": "Table",
         "title": "Bassett Furniture Crossbuck",
         "description": "Few dining tables transition different decorating styles as straightforwardly as the Crossbuck table by BenchMade. A craftsman's touch gives it its own unique look and feel while exposed mortise and tenon joinery recall the style and functionality of an 18th century tavern table.",
@@ -108,7 +108,7 @@
         "image": "/img/tables/Bassett_Furniture_Crossbuck/Bassett_Furniture_Crossbuck_1.webp"
     },
     {
-        "id": 2003,
+        "id": "2003",
         "category": "Table",
         "title": "Bassett Furniture Liam",
         "description": "The Liam Square Oak End Table sets the tone for casual living with its clean lines and dramatic presence. Hand crafted by BenchMade artisans, the genuine American hardwood table rests on an angular trestle base. And it's a handy place to set a drink or a vase of flowers.",
@@ -117,7 +117,7 @@
         "image": "/img/tables/Bassett_Furniture_Liam/Bassett_Furniture_Liam_1.webp"
     },
     {
-        "id": 2004,
+        "id": "2004",
         "category": "Table",
         "title": "Bassett Furniture McLean",
         "description": "Built with all solid Appalachian White Oak, each table is made one at a time for you, in any of 8 hand finished Oak colors. The simple bold lines of the McLean table show off the unique organic grain of the Oak and the open airy base of the table.",
@@ -126,7 +126,7 @@
         "image": "/img/tables/Bassett_Furniture_McLean/Bassett_Furniture_McLean_1.webp"
     },
     {
-        "id": 2005,
+        "id": "2005",
         "category": "Table",
         "title": "Bassett Furniture Midtown",
         "description": "The Midtown collection extends Bassett's BenchMade into smaller scale dining with the same 100% Made in the USA solid wood craftsmanship. BenchMade Midtown is the fusion of classic and bistro chic.",
@@ -135,7 +135,7 @@
         "image": "/img/tables/Bassett_Furniture_Midtown/Bassett_Furniture_Midtown_1.webp"
     },
     {
-        "id": 2006,
+        "id": "2006",
         "category": "Table",
         "title": "Bassett Furniture Tyson",
         "description": "Crafted with a natural travertine stone top and artfully finished metal base, the Tyson cocktail table offers modern styling with a rustic twist.",
@@ -144,7 +144,7 @@
         "image": "/img/tables/Bassett_Furniture_Tyson/Bassett_Furniture_Tyson_1.webp"
     },
     {
-        "id": 2007,
+        "id": "2007",
         "category": "Table",
         "title": "Flexsteel Plymouth Wynwood",
         "description": "This understated collection establishes a smooth and cohesive viewing experience with functionality to match",
@@ -153,7 +153,7 @@
         "image": "/img/tables/Flexsteel_Plymouth_Wynwood/Flexsteel_Plymouth_Wynwood_1.webp"
     },
     {
-        "id": 2008,
+        "id": "2008",
         "category": "Table",
         "title": "Bassett Mirror Borghese",
         "description": "Dine-in style with the Borghese Dining Table. This Antique Mirror/Silver Leaf dining table features a glass on the table top , creating a glam look. This rectangular dining table adds a subtle elegance to your kitchen.",
