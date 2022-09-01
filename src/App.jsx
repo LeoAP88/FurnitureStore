@@ -15,7 +15,7 @@ function App(props) {
           <NavBar />
         </div>
         <Routes>
-          <Route path='/' element={<ItemListContainer />}  />
+          <Route path='/FurnitureStore/' element={<ItemListContainer />}  />
           <Route path='/category/:categoryId' element={<ItemListContainer />}  />
           <Route path='/detail' element={<ItemDetailContainer />}  />
           <Route path='/cart' element={<Cart />}  />
