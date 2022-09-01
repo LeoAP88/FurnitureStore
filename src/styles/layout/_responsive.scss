@@ -6,10 +6,9 @@ $breakpoints: (
 
 @media(min-width:map-get($breakpoints, Tablet)) {
     .Img_product {
-        width: 230px;
+        width: 200px;
         height: 150px;
     }
-
 }
 
 @media(min-width:map-get($breakpoints, Laptop)) {
@@ -35,7 +34,7 @@ $breakpoints: (
     }
 
     .Prod_Container {
-        width: 33%;
+        width: 30%;
     }
 }
 

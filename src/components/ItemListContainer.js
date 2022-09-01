@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
+// import ItemCount from "./ItemCount";
 import {ItemList} from "./ItemList";
 import dataJson from "./data/data.json";
 
@@ -28,13 +28,13 @@ export const ItemListContainer = () => {
     }, []);
 
 
-    function onAdd(counterReceived) {
-        console.log(`Added quantity: ${counterReceived}`);
-    }
+    // function onAdd(counterReceived) {
+    //     console.log(`Added quantity: ${counterReceived}`);
+    // }
 
     return (
         <main>
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
             <section>
                 <ItemList products={products} />
             </section>
