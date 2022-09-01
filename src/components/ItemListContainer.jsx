@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-// import ItemCount from "./ItemCount";
-import {ItemList} from "./ItemList";
+import { ItemList } from "./ItemList";
 import dataJson from "./data/data.json";
+import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
+
+    const { categoryId } = useParams();
 
     useEffect(() => {
 
@@ -20,21 +22,15 @@ export const ItemListContainer = () => {
                 }, time);
             });
 
-        getProducts(dataJson, 2000)
-            .then((res) => {
-                setProducts(res);
-            })
-            .catch((err) => console.log(err, ": No products found"));
-    }, []);
+        getProducts(dataJson, 1000)
 
+            .then(categoryId ? (res => setProducts(res.filter(sofa => sofa.category === categoryId))) : ((res) => setProducts(res)))
+            .catch((err) => console.log(err, ": No products found"))
 
-    // function onAdd(counterReceived) {
-    //     console.log(`Added quantity: ${counterReceived}`);
-    // }
+    }, [categoryId]);
 
     return (
         <main>
-            {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
             <section>
                 <ItemList products={products} />
             </section>

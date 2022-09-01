@@ -1,11 +1,12 @@
 import React from 'react'
 import Logo from "../assets/images/Logo.png";
+import {NavLink} from 'react-router-dom';
 
-function Header() {
+export const Header = () => {
     return (
         <header>
             <div className="Container_logo">
-                <a href="#"><img src={Logo} alt="Moderna Logo" className="Logo" /></a>
+                <NavLink to='/'><img src={Logo} alt="Moderna Logo" className="Logo" /></NavLink>
             </div>
             <div className="Container_BrandName">
                 <p className="BrandName">moderna</p>
@@ -15,4 +16,3 @@ function Header() {
     )
 }
 
-export default Header

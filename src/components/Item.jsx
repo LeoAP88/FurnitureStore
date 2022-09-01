@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from './ItemCount';
+import {ItemCount} from './ItemCount';
 
 export const Item = ({products}) => {
 
@@ -18,5 +18,3 @@ export const Item = ({products}) => {
         </div>
     )
 }
-
-export default Item
