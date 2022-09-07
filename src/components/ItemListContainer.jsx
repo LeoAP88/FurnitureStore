@@ -24,7 +24,7 @@ export const ItemListContainer = () => {
 
         getProducts(dataJson, 1000)
 
-            .then(categoryId ? (res => setProducts(res.filter(sofa => sofa.category === categoryId))) : ((res) => setProducts(res)))
+            .then(categoryId ? (res => setProducts(res.filter(prod => prod.category === categoryId))) : ((res) => setProducts(res)))
             .catch((err) => console.log(err, ": No products found"))
 
     }, [categoryId]);

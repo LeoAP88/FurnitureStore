@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <header>
             <div className="Container_logo">
-                <NavLink to='/FurnitureStore/'><img src={Logo} alt="Moderna Logo" className="Logo" /></NavLink>
+                <NavLink to='/'><img src={Logo} alt="Moderna Logo" className="Logo" /></NavLink>
             </div>
             <div className="Container_BrandName">
                 <p className="BrandName">moderna</p>
