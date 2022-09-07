@@ -9,6 +9,12 @@ $breakpoints: (
         width: 200px;
         height: 150px;
     }
+
+    .Img_product_detail {
+        width: 60%;
+    }
+
+
 }
 
 @media(min-width:map-get($breakpoints, Laptop)) {
@@ -36,6 +42,57 @@ $breakpoints: (
     .Prod_Container {
         width: 30%;
     }
+
+    .Prod_Detail_Container {
+        display: grid;
+        grid-template-areas:
+            'title title title'
+            'img desc desc'
+            'img price counter';
+        grid-template-columns: 2.5fr 1fr 1fr;
+        grid-template-rows: 2fr 3fr 1fr;
+        margin-top: 0;
+    }
+
+    .Prod_Title_detail {
+        grid-area: title;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .Prod_Description {
+        grid-area: desc;
+        margin-top: 0;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        text-align: justify;
+        line-height: 25px;
+        width: 90%;
+    }
+
+    .Img_product_detail {
+        grid-area: img;
+        display: flex;
+        justify-self: center;
+        margin-top: 0;
+        width: 400px;
+    }
+
+    .Prod_Price {
+        grid-area: price;
+        text-align: center;
+        margin-top: 0;
+        display: flex;
+        justify-self: center;
+    }
+
+    .ItemCounter_Container {
+        grid-area: counter;
+        margin-top: 0;
+        justify-self: flex-start;
+    }
+
 }
 
 @media(min-width:map-get($breakpoints, Desktop)) {
@@ -64,6 +121,11 @@ $breakpoints: (
     .Img_product {
         width: 300px;
         height: 200px;
+    }
+
+    .Prod_Detail_Container {
+        max-width: 900px;
+        justify-self: center;
     }
 
 }

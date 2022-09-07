@@ -11,7 +11,7 @@ export const Item = ({ products }) => {
                 <p className='Prod_Title'>{title}</p>
                 <img src={process.env.PUBLIC_URL + image} alt={title} className="Img_product"></img>
                 <Link to={`/detail/${products.id}`}>
-                    <button>More Info</button>
+                    <button className='btnInfo'>More Info</button>
                 </Link>
             </div>
         

@@ -10,16 +10,12 @@ export const ItemDetail = ({ products }) => {
     }
 
     return (
-        
-        <div className="ProdList_container">
-                        <p>{title}</p>
-                        <p>{price}</p>
-                        <p>{description}</p>
-                        <img src={process.env.PUBLIC_URL + image} alt={title} className="Img_product"></img>
-                        <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-
-            
+        <div className="Prod_Detail_Container">
+            <p className='Prod_Title_detail'>{title}</p>
+            <p className='Prod_Description'>{description}</p>
+            <img src={process.env.PUBLIC_URL + image} alt={title} className="Img_product_detail"></img>
+            <p className='Prod_Price'>Price: ${price}</p>
+            <ItemCount stock={stock} initial={1} onAdd={onAdd} />
         </div>
-
     )
 }
