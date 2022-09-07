@@ -3,6 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 export const CartWidget = () => {
     return (
-        <NavLink to='/cart'><img src={Cart} alt="Carrito de compras" className="Cart pulsate-fwd" /></NavLink>
+        <NavLink to='/cart'><img src={Cart} alt="Carrito de compras" className="Cart" /></NavLink>
     );
 }

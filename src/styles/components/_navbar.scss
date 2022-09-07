@@ -52,10 +52,10 @@ a {
     height: 1.7rem;
 }
 
-.pulsate-fwd:hover {
-    -webkit-animation: pulsate-fwd .5s ease-in-out infinite both;
-    animation: pulsate-fwd .5s ease-in-out infinite both
-}
+// .pulsate-fwd:hover {
+//     -webkit-animation: pulsate-fwd .5s ease-in-out infinite both;
+//     animation: pulsate-fwd .5s ease-in-out infinite both
+// }
 
 @-webkit-keyframes pulsate-fwd {
     0% {

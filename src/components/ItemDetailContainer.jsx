@@ -27,7 +27,7 @@ export const ItemDetailContainer = () => {
             .then(res => setProducts(res.find(prod => prod.id === detailId)))
             .catch((err) => console.log(err, ": No products found"))
 
-    }, []);
+    },);
 
     return (
         <>
