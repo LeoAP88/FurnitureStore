@@ -1,0 +1,31 @@
+.Prod_Detail_Container {
+    display: flex;
+    flex-direction: column;
+    color: $Primary;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Prod_Title_detail {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.Prod_Price {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.Prod_Description {
+    text-align: justify;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.Img_product_detail {
+    margin-top: 40px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 20px;
+}

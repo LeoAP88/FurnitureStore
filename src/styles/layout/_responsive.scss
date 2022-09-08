@@ -138,13 +138,20 @@ $breakpoints: (
 
     .btn-increase,
     .btn-decrease,
-    .item-quantity,
-    .btn-addToCart {
+    .item-quantity {
         font-size: 1.1rem;
+    }
+
+    .btn-addToCart {
+        font-size: 0.95rem;
     }
 
     .Prod_Price {
         font-size: 1.2rem;
+    }
+
+    .Prod_Description {
+        font-size: 1.1rem;
     }
 
     .btn-addToCart {
