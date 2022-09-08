@@ -128,7 +128,7 @@ $breakpoints: (
         justify-self: center;
     }
 
-    .Img_product_detail{
+    .Img_product_detail {
         width: 500px;
     }
 
@@ -136,20 +136,19 @@ $breakpoints: (
         width: 60%;
     }
 
-    .btn-increase, .btn-decrease, .item-quantity, .btn-addToCart {
+    .btn-increase,
+    .btn-decrease,
+    .item-quantity,
+    .btn-addToCart {
         font-size: 1.1rem;
     }
 
-    .Prod_Price{
+    .Prod_Price {
         font-size: 1.2rem;
     }
 
     .btn-addToCart {
         width: 120px;
-    }
-    
-    .item-quantity {
-        
     }
 
 }
