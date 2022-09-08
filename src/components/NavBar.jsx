@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
 
         <nav className="NavBar">
-            <ul className="">
+            <ul className="LinkContainerg">
                 <li>
                     <NavLink to='/'>
                         All Products
