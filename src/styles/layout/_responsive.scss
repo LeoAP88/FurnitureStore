@@ -46,12 +46,12 @@ $breakpoints: (
     .Prod_Detail_Container {
         display: grid;
         grid-template-areas:
-            'title title title'
+            'img title title'
             'img desc desc'
             'img price counter';
         grid-template-columns: 2.5fr 1fr 1fr;
-        grid-template-rows: 2fr 3fr 1fr;
-        margin-top: 0;
+        grid-template-rows: auto 200px auto;
+        margin-top: 100px;
     }
 
     .Prod_Title_detail {
@@ -90,7 +90,7 @@ $breakpoints: (
     .ItemCounter_Container {
         grid-area: counter;
         margin-top: 0;
-        justify-self: flex-start;
+        justify-self: center;
     }
 
 }
@@ -124,8 +124,32 @@ $breakpoints: (
     }
 
     .Prod_Detail_Container {
-        max-width: 900px;
+        max-width: 1000px;
         justify-self: center;
+    }
+
+    .Img_product_detail{
+        width: 500px;
+    }
+
+    .ItemCounter_Container {
+        width: 60%;
+    }
+
+    .btn-increase, .btn-decrease, .item-quantity, .btn-addToCart {
+        font-size: 1.1rem;
+    }
+
+    .Prod_Price{
+        font-size: 1.2rem;
+    }
+
+    .btn-addToCart {
+        width: 120px;
+    }
+    
+    .item-quantity {
+        
     }
 
 }
