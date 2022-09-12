@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Item = ({ products }) => {
 
+
     const { title, image } = products;
 
     return (

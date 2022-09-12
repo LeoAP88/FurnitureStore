@@ -1,12 +1,20 @@
 import React from 'react'
+import { useState } from 'react';
 import { ItemCount } from './ItemCount';
+import { Link } from 'react-router-dom';
+import { useCartContext } from '../context/CartContext';
 
 export const ItemDetail = ({ products }) => {
 
     const { title, price, description, image, stock } = products;
 
-    function onAdd(counterReceived) {
-        console.log(`Added quantity: ${counterReceived}`);
+    const [goToCart, setGoToCart] = useState(false);
+    
+    const {addProduct} = useCartContext();
+
+    function onAdd(quantity) {
+        setGoToCart(true);
+        addProduct(products, quantity);
     }
 
     return (
@@ -15,7 +23,11 @@ export const ItemDetail = ({ products }) => {
             <p className='Prod_Description'>{description}</p>
             <img src={process.env.PUBLIC_URL + image} alt={title} className="Img_product_detail"></img>
             <p className='Prod_Price'>Price: ${price}</p>
-            <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+            {
+                goToCart
+                    ? <Link to='/cart'>Proceed to checkout</Link>
+                    : <ItemCount stock={stock} initial={1} onAdd={onAdd} />
+            }
         </div>
     )
 }
