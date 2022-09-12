@@ -25,7 +25,7 @@ export const ItemDetail = ({ products }) => {
             <p className='Prod_Price'>Price: ${price}</p>
             {
                 goToCart
-                    ? <Link to='/cart'>Proceed to checkout</Link>
+                    ? <Link to='/cart' className='btn-ToCart'>Proceed to checkout</Link>
                     : <ItemCount stock={stock} initial={1} onAdd={onAdd} />
             }
         </div>

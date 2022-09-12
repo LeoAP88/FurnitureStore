@@ -13,8 +13,6 @@ $breakpoints: (
     .Img_product_detail {
         width: 60%;
     }
-
-
 }
 
 @media(min-width:map-get($breakpoints, Laptop)) {
@@ -91,6 +89,11 @@ $breakpoints: (
         grid-area: counter;
         margin-top: 0;
         justify-self: center;
+    }
+
+    .btn-ToCart {
+        margin-top: 0px;
+        padding: 8px;
     }
 
 }
