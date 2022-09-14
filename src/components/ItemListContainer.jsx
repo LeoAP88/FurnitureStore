@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ItemList } from "./ItemList";
 import dataJson from "./data/data.json";
 import { useParams } from 'react-router-dom';
+// import { getFirestore, doc, getDoc} from 'firebase/firestone';
 
 export const ItemListContainer = () => {
 
@@ -28,6 +29,13 @@ export const ItemListContainer = () => {
             .catch((err) => console.log(err, ": No products found"))
 
     }, [categoryId]);
+
+    // useEffect(() => {
+    //     const querydb = getFirestore();
+    //     const queryDoc = doc(querydb, 'products', '1000');
+    //     getDoc(queryDoc)
+    //     .then(res => console.log(res));
+    // }, [])
 
     return (
         <main>
