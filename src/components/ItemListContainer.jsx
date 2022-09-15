@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ItemList } from "./ItemList";
-import dataJson from "./data/data.json";
 import { useParams } from 'react-router-dom';
-// import { getFirestore, doc, getDoc} from 'firebase/firestone';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 
 export const ItemListContainer = () => {
 
@@ -11,31 +10,21 @@ export const ItemListContainer = () => {
     const { categoryId } = useParams();
 
     useEffect(() => {
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'products');
 
-        const getProducts = (data, time) =>
-            new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    if (data) {
-                        resolve(data);
-                    } else {
-                        reject("Error");
-                    }
-                }, time);
-            });
 
-        getProducts(dataJson, 1000)
-
-            .then(categoryId ? (res => setProducts(res.filter(prod => prod.category === categoryId))) : ((res) => setProducts(res)))
-            .catch((err) => console.log(err, ": No products found"))
+        if (categoryId) {
+            const queryFilter = query(queryCollection, where('category', '==', categoryId))
+            getDocs(queryFilter)
+                .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        }
+        else {
+            getDocs(queryCollection)
+                .then(res => setProducts(res.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        }
 
     }, [categoryId]);
-
-    // useEffect(() => {
-    //     const querydb = getFirestore();
-    //     const queryDoc = doc(querydb, 'products', '1000');
-    //     getDoc(queryDoc)
-    //     .then(res => console.log(res));
-    // }, [])
 
     return (
         <main>

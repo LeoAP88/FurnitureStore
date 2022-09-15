@@ -1,41 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { ItemDetail } from './ItemDetail'
-// import dataJson from "./data/data.json";
 import { useParams } from 'react-router-dom';
 import { BeatLoader } from 'react-spinners'
-import { getFirestore, doc, getDoc} from 'firebase/firestore';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
 
 export const ItemDetailContainer = () => {
 
     const [products, setProducts] = useState({});
     const { detailId } = useParams();
 
-    // useEffect(() => {
-
-    //     const getProducts = (data, time) =>
-    //         new Promise((resolve, reject) => {
-    //             setTimeout(() => {
-    //                 if (data) {
-    //                     resolve(data);
-    //                 } else {
-    //                     reject("Error");
-    //                 }
-    //             }, time);
-    //         });
-
-    //     getProducts(dataJson, 1000)
-
-    //         .then(res => setProducts(res.find(prod => prod.id === detailId)))
-    //         .catch((err) => console.log(err, ": No products found"))
-
-    // },);
-
     useEffect(() => {
         const querydb = getFirestore();
-        const queryDoc = doc(querydb, 'products', '1001');
+        const queryDoc = doc(querydb, 'products', detailId);
         getDoc(queryDoc)
-        .then(res => setProducts({id: res.id, ...res.data()}));
-    }, [])
+            .then(res => setProducts({ id: res.id, ...res.data() }));
+    }, [detailId])
 
     return (
         <>
