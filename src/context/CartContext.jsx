@@ -8,6 +8,14 @@ export const CartProvider = ({children}) => {
 
     const [cart, setCart] = useState([]);
 
+    const totalPrice = () =>{
+        return cart.reduce((prev, act) => prev + act.quantity * act.price, 0); 
+    }
+
+    const totalProducts = () =>{
+        return cart.reduce((acum, act) => acum + act.quantity, 0);
+    }
+
     const cleanCart = () => setCart([]);
 
     const isInCart = (id) => cart.find(prod => prod.id === id) ? true : false;
@@ -29,7 +37,10 @@ export const CartProvider = ({children}) => {
             cleanCart,
             isInCart,
             removeProduct,
-            addProduct
+            addProduct,
+            totalPrice,
+            totalProducts,
+            cart
         }}>
             {children}
         </CartContext.Provider>

@@ -43,19 +43,12 @@
 a {
     text-decoration: none;
     color: $Primary;
-
-
 }
 
 .Cart {
     width: 1.7rem;
     height: 1.7rem;
 }
-
-// .pulsate-fwd:hover {
-//     -webkit-animation: pulsate-fwd .5s ease-in-out infinite both;
-//     animation: pulsate-fwd .5s ease-in-out infinite both
-// }
 
 @-webkit-keyframes pulsate-fwd {
     0% {

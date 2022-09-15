@@ -1,0 +1,43 @@
+.ItemCart_Container{
+    display: grid;
+    grid-template-areas: 
+    'img title .'
+    'img price remove'
+    'img quantity remove'
+    'img subtotal .';
+    grid-template-columns: 1.75fr 1.75fr 0.5fr;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+}
+
+.Img_inCart{
+    grid-area: img;
+    width: 150px;
+    height: 100px;
+}
+
+.Title_inCart{
+    grid-area: title;
+}
+
+.Price_inCart{
+    grid-area: price;
+}
+
+.Quantity_inCart{
+    grid-area: quantity;
+}
+
+.Subtotal_inCart{
+    grid-area: subtotal;
+}
+
+.btn-remove{
+    justify-self: center;
+    grid-area: remove;
+    width: 30px;
+    font-weight: bold;
+}

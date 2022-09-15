@@ -1,7 +1,31 @@
 import React from 'react'
+import { useCartContext } from '../context/CartContext'
+import { Link } from 'react-router-dom';
+import { ItemCart } from './ItemCart';
 
 export const Cart = () => {
+
+    const { cart, totalPrice } = useCartContext();
+
+    if (cart.length === 0) {
+        return (
+            <>
+                <div className='EmptyCart_Container'>
+                    <p>Your cart is empty...</p>
+                    <Link to='/'><button className='btn-goToShop'>Go shopping</button></Link>
+                </div>
+            </>
+        )
+    }
+
     return (
-        <div>Cart</div>
+        <>
+            {
+                cart.map(prod => <ItemCart key={prod.id} prod={prod} />)
+            }
+
+            <p className='Total_inCart'>Total: ${totalPrice()}</p>
+
+        </>
     )
 }
