@@ -4,7 +4,15 @@ import { useCartContext } from "../context/CartContext";
 
 export const CartWidget = () => {
 
-    const { totalProducts } = useCartContext();
+    const { cart, totalProducts } = useCartContext();
+
+
+    if (!cart.length) {
+        return (
+            <>
+            </>
+        )
+    }
 
     return (
         <>

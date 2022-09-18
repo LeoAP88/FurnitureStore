@@ -7,7 +7,7 @@ export const Cart = () => {
 
     const { cart, totalPrice } = useCartContext();
 
-    if (cart.length === 0) {
+    if (!cart.length) {
         return (
             <>
                 <div className='EmptyCart_Container'>
