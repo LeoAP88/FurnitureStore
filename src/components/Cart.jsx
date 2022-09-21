@@ -12,9 +12,9 @@ export const Cart = () => {
 
     const order = {
         buyer: {
-            name: '',
-            phone: '',
-            email: '',
+            name: 'Pepe',
+            phone: '5555-5555',
+            email: 'pepe@gmail.com',
         },
         items: cart.map(prod => ({ id: prod.id, title: prod.title, price: prod.price })),
         date: todayDate,
