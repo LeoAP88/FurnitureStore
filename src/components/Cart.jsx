@@ -2,32 +2,11 @@ import React from 'react'
 import { useCartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom';
 import { ItemCart } from './ItemCart';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { UserForm } from './UserForm';
 
 export const Cart = () => {
 
     const { cart, totalPrice } = useCartContext();
-
-    let todayDate = new Date().toISOString().slice(0, 10);
-
-    const order = {
-        buyer: {
-            name: 'Pepe',
-            phone: '5555-5555',
-            email: 'pepe@gmail.com',
-        },
-        items: cart.map(prod => ({ id: prod.id, title: prod.title, price: prod.price })),
-        date: todayDate,
-        total: totalPrice()
-    }
-
-    const handleClick = () => {
-        const db = getFirestore();
-        const ordersCollection = collection(db, 'orders');
-        addDoc(ordersCollection, order)
-            .then(({ id }) => console.log(id))
-    }
-
 
     if (!cart.length) {
         return (
@@ -48,7 +27,7 @@ export const Cart = () => {
 
             <p className='Total_inCart'>Total: ${totalPrice()}</p>
 
-            <button onClick={handleClick}>Checkout</button>
+            <UserForm />
 
         </>
     )
