@@ -19,6 +19,14 @@ $breakpoints: (
         justify-self: center;
     }
 
+    .Form_Container{
+        width: 300px;
+        padding: 15px;
+        
+        input{
+            width: 200px;
+        }
+    }
 }
 
 @media(min-width:map-get($breakpoints, Laptop)) {
@@ -110,6 +118,15 @@ $breakpoints: (
     .Img_inCart{
         width: 230px;
         height: 150px;
+    }
+
+    .Form_Container{
+        width: 400px;
+        padding: 15px;
+        
+        input{
+            width: 300px;
+        }
     }
 
 }
