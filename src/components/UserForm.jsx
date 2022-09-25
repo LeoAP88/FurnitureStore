@@ -15,7 +15,6 @@ export const UserForm = () => {
     const [btn, setBtn] = useState();
 
     const handleSubmit = (e) => {
-        setBtn("disabled");
         e.preventDefault();
         let letters = /^[a-zA-Z\s]*$/;
         let numbers = /^[-+]?[0-9]+$/;
@@ -37,6 +36,8 @@ export const UserForm = () => {
         }
 
         else {
+
+            setBtn("disabled");
 
             const order = {
                 buyer: {
