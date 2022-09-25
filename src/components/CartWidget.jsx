@@ -20,7 +20,7 @@ export const CartWidget = () => {
                 <img src={Cart} alt="Carrito de compras" className="Cart" />
                 <span className="itemsInCart">{totalProducts() || ''}</span>
             </NavLink>
-            
+
         </>
     );
 }

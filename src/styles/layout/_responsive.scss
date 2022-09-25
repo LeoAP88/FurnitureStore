@@ -14,16 +14,16 @@ $breakpoints: (
         width: 60%;
     }
 
-    .ItemCart_Container{
+    .ItemCart_Container {
         width: 85%;
         justify-self: center;
     }
 
-    .Form_Container{
+    .Form_Container {
         width: 300px;
         padding: 15px;
-        
-        input{
+
+        input {
             width: 200px;
         }
     }
@@ -110,21 +110,21 @@ $breakpoints: (
         padding: 8px;
     }
 
-    .ItemCart_Container{
+    .ItemCart_Container {
         width: 700px;
         grid-template-columns: 2fr 1.5fr 0.5fr;
     }
 
-    .Img_inCart{
+    .Img_inCart {
         width: 230px;
         height: 150px;
     }
 
-    .Form_Container{
+    .Form_Container {
         width: 400px;
         padding: 15px;
-        
-        input{
+
+        input {
             width: 300px;
         }
     }

@@ -12,11 +12,12 @@ export const UserForm = () => {
     const [email, setEmail] = useState();
     const todayDate = new Date().toISOString().slice(0, 10);
     const MySwal = withReactContent(Swal)
+    const [btn, setBtn] = useState();
 
     const handleSubmit = (e) => {
+        setBtn("disabled");
         e.preventDefault();
-
-        let letters = /^[A-Za-z]+$/;
+        let letters = /^[a-zA-Z\s]*$/;
         let numbers = /^[-+]?[0-9]+$/;
 
         if (!name.match(letters)) {
@@ -94,7 +95,7 @@ export const UserForm = () => {
                         setEmail(e.target.value)
                     }}
                 />
-                <button className='btn-form' type="submit">Place order</button>
+                <button className='btn-form' type="submit" disabled={btn}>Place order</button>
             </form>
         </div>
     )
